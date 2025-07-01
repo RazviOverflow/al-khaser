@@ -209,7 +209,7 @@ int main(int argc, char* argv[]){
 		exec_check(CAT_DEBUG, &CanOpenCsrss, TEXT("Checking SeDebugPrivilege "));
 		exec_check(CAT_DEBUG, &NtQueryObject_ObjectTypeInformation, TEXT("Checking NtQueryObject with ObjectTypeInformation "));
 		exec_check(CAT_DEBUG, &NtQueryObject_ObjectAllTypesInformation, TEXT("Checking NtQueryObject with ObjectAllTypesInformation "));
-		exec_check(CAT_DEBUG, &NtYieldExecutionAPI, TEXT("Checking NtYieldExecution "));
+		//exec_check(CAT_DEBUG, &NtYieldExecutionAPI, TEXT("Checking NtYieldExecution "));
 		exec_check(CAT_DEBUG, &SetHandleInformatiom_ProtectedHandle, TEXT("Checking CloseHandle protected handle trick  "));
 		exec_check(CAT_DEBUG, &NtQuerySystemInformation_SystemKernelDebuggerInformation, TEXT("Checking NtQuerySystemInformation with SystemKernelDebuggerInformation  "));
 		exec_check(CAT_DEBUG, &SharedUserData_KernelDebugger, TEXT("Checking SharedUserData->KdDebuggerEnabled  "));
@@ -452,7 +452,7 @@ int main(int argc, char* argv[]){
 
 	_tprintf(_T("\n\nAnalysis done, I hope you didn't get red flags :)"));
 
-	getchar();
+	//getchar();
 	return 0;
 }
 
