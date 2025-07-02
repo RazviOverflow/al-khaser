@@ -453,7 +453,7 @@ int main(int argc, char* argv[]){
 
 	_tprintf(_T("\n\nAnalysis done, I hope you didn't get red flags :)"));
 
-	//getchar();
+	getchar();
 	return 0;
 }
 
