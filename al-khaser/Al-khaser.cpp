@@ -111,7 +111,7 @@ void print_help(const char* prog_name){
 
 int main(int argc, char* argv[]){
 	/* enable functions */
-	UINT delayInSeconds = 600U; // default value
+	UINT delayInSeconds = 15U; // default value
 	int enabled_checks = 0;
 
 	if (argc > 1) {
@@ -154,7 +154,8 @@ int main(int argc, char* argv[]){
 	resize_console_window();
 
 	/* Display general informations */
-	_tprintf(_T("[al-khaser version 0.82]"));
+	_tprintf(_T("[al-khaser version 0.83]\n"));
+	_tprintf(_T("[!] Modifications:\n  - Output statistics\n  - Parametrized sleep: defaults to 15 seconds\n  - Included -h/--help\n  - No final getchar()\n  - No NtYieldExecution checks\n"));
 
 	print_category(TEXT("Initialisation"));
 	API::Init();
